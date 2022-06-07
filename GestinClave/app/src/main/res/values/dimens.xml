@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="txtViewAncho">250dp</dimen>
+    <dimen name="txtViewAlto">30dp</dimen>
+    <dimen name="cardAncho">285dp</dimen>
+    <dimen name="cardLargo">70dp</dimen>
+</resources>

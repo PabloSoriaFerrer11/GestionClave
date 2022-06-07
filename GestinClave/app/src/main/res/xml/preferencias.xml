@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="0"
+        android:key="limiteDiario"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Limite diario de Gastos" />
+    <EditTextPreference
+        android:defaultValue="0"
+        android:key="limiteMensual"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Limite mensual de Gastos" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="modoEmpresa"
+        android:title="Activar modo empresa" />
+</PreferenceScreen>

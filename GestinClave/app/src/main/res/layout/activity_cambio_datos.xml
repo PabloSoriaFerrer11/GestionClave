@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cambioDatosActivity"
+    tools:layout_editor_absoluteX="-8dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <Button
+        android:id="@+id/buttonSoloTlf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="516dp"
+        android:text="actualiza"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumero"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSoloCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="372dp"
+        android:text="actualiza"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextCorreo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSoloApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="248dp"
+        android:text="actualiza"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextApellidos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="@dimen/txtViewAncho"
+        android:layout_height="@dimen/txtViewAlto"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Introduzca el nuevo teléfono:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="@dimen/txtViewAncho"
+        android:layout_height="@dimen/txtViewAlto"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Introduzca el nuevo correo:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextApellidos" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="@dimen/txtViewAncho"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombre"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="@dimen/txtViewAncho"
+        android:layout_height="@dimen/txtViewAlto"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:text="Introduzca el nuevo nombre:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="@dimen/txtViewAncho"
+        android:layout_height="@dimen/txtViewAlto"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Introduzca los nuevos apellidos:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+    <EditText
+        android:id="@+id/editTextApellidos"
+        android:layout_width="@dimen/txtViewAncho"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="249dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editTextNumero"
+        android:layout_width="@dimen/txtViewAncho"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonGuardarCambio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Guardar todo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumero" />
+
+    <Button
+        android:id="@+id/buttonSoloNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="116dp"
+        android:text="actualiza"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextNombre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

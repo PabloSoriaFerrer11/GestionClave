@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="arrayEmpresa">
+        <item>Compra Materias primas</item>
+        <item>Compra Artículo </item>
+        <item>Venta Articulo </item>
+        <item>Sueldos</item>
+        <item>Luz</item>
+        <item>Agua</item>
+        <item>Subvención</item>
+        <item>Transferencia</item>
+        <item>Otros</item>
+    </string-array>
+    <string-array name="arraySingular">
+        <item>Comida</item>
+        <item>Luz</item>
+        <item>Agua</item>
+        <item>Gasolina</item>
+        <item>Gas</item>
+        <item>Teléfono</item>
+        <item>Regalo</item>
+        <item>Bizum</item>
+        <item>Sueldo</item>
+        <item>Otros</item>
+    </string-array>
+</resources>

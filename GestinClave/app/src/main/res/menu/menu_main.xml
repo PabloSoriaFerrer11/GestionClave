@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pasofe.gestinclave.MainActivity">
+    <item
+        android:id="@+id/limitesGastos"
+        android:orderInCategory="101"
+        android:title="Ajustes" />
+    <item
+        android:id="@+id/menuManual"
+        android:title="Manual Usuario" />
+    <item
+        android:id="@+id/menuDatos"
+        android:orderInCategory="100"
+        android:title="Datos Usuario"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnuSalir"
+        android:menuCategory="secondary"
+        android:orderInCategory="5"
+        android:title="Salir" />
+</menu>

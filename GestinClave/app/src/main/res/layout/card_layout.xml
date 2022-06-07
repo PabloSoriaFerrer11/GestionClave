@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#000000"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardBackgroundColor="#909090"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp"
+    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rectangulo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="400dp"
+        android:layout_height="188dp">
+
+        <TextView
+            android:id="@+id/textViewInfoGasto"
+            android:layout_width="113dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="40dp"
+            android:text="Gastado"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewInfoIngresado"
+            android:layout_width="113dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="44dp"
+            android:text="Ingresado"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewMes"
+            android:layout_width="138dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="16dp"
+            android:text="Mes"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textViewInfoGasto"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toEndOf="@+id/textViewInfoIngresado"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewIngresos"
+            android:layout_width="113dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewInfoIngresado" />
+
+        <TextView
+            android:id="@+id/textViewGastos"
+            android:layout_width="113dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewInfoIngresado" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
